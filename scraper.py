@@ -1,3 +1,7 @@
+'''
+A module for scraping proxies using an api.
+'''
+
 from requests import get
 
 def scrape(protocol: str = 'all', timeout: int = 10000, country: str = 'all', ssl: str = 'all', anonymity: str = 'all') -> list[str]:
