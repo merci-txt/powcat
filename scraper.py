@@ -32,9 +32,3 @@ def scrape(protocol: str = 'all', timeout: int = 10000, country: str = 'all', ss
         raise ValueError('No proxies where returned by the API!')
     
     return proxies
-
-if __name__ == '__main__':
-    print('Scraping proxies...')
-
-    for proxy in scrape():
-        print(proxy) 
